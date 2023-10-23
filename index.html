@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações Colaborativas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header>
+    <h1 class="titulo">Anotações Colaborativas</h1>
+    <div class="is-flex hidden" id="info-usuario">
+      <p id="usuario-logado"> <strong> Usuário: </strong> <span id="usuario-nome">  </span> </p>
+      <button id="logout">Sair</button>
+    </div>
+  </header>
+
+  <section id="notas-container" class="hidden">
+    <form id="form-nota">
+      <textarea id="note-content" cols="30" rows="10"></textarea>
+      <input type="submit" value="Adicionar">
+    </form>
+    <!-- <button id="start-record">Iniciar Gravação</button>
+    <button id="stop-record">Parar Gravação</button>
+    <audio id="audio-player" controls></audio> -->
+
+    <h2>Notas</h2>
+    <ul id="notas-list"></ul>
+  </section>
+
+  <section id="login-container">
+    <h2 class="subtitulo">Login</h2>
+    <form id="form-login">
+      <input type="text" placeholder="Nome" id="usuario-input">
+      <input type="submit" value="Entrar">
+    </form>
+  </section>
+
+
+  <script type="module" src="app/app.js"></script>
+</body>
+</html>
