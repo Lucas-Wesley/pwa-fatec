@@ -66,7 +66,6 @@ export default class Notas {
   }
 
   async renderizarNotas() {
-    console.log('renderizar notas')
     const notas = await this.getNotas();
     const notasList = document.getElementById('notas-list');
     notasList.innerHTML = '';
